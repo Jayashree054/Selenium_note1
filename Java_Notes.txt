@@ -1,0 +1,720 @@
+8056290766
+Core Java
+===============================================================================================================================================
+1)What is JAVA
+	
+        *Simple programming language
+        *Java is open source and easy to learn
+        *Writing, Compiling and debugging Is easy
+	*It can be reusable
+
+2)History of java
+
+	*James Gosling(Father of Java)initiated the Java language project in June 1991
+	*Firstly, it was called "Greentalk" and its file extension was .gt 
+	*After that, it was called Oak and was developed as a part of the Green project
+	*Oak is a symbol of strength and chosen as a national tree of many countries like the U.S.A., France, Germany, Romania, etc.
+	*In 1995, Oak was renamed as "Java"
+
+3)Features
+	
+        *Platform Independent---> Java compiler converts Source code to Byte code in any platform.
+	*Open source---> Free Of Cost
+	*Secure---> virtual firewall between Application & Computer
+	*Multi-thread---> eg.(ticket booking)
+	*Multi-tasking---> eg.(Whats App)
+	*Portable---> WORA (Write Once Run Anywhere)
+
+4)Java architecture
+
+   JDK (Java Development Kit)
+       To develop JAVA code
+       Version 1.0 - 1.17
+       Standard Version - 1.8
+       JDK=JRE+JVM
+
+   JRE (Java Run time environment)
+       Helps to run program
+       Contains pre-defined library files
+
+   JVM (Java Virtual Machine)
+       Used for memory allocation
+       Not physically exist
+
+5)Coding standard
+
+Two Types:
+         *PASCAL
+         *CAMEL
+
+    PASCAL---> Every word 1st letter must be Capital. [Project/Class Name]
+           Eg: Employee_Details
+   
+    CAMEL---> every 1st word remaining word 1st letter must be capital.[Object/Method/Variable]
+           Eg: employee_Detail_Capgemini
+
+Package(org.name/com.name)
+
+How to create the project:
+      
+      File---> New---> Java Project
+      src---> New---> Package
+      Package---> New---> Class
+
+For program we need to download
+           
+        Eclipse 2019-12(Integrated Development Environment (IDE))---> R-Packages(Windows)
+                Link:https://www.eclipse.org/downloads/packages/release/2019-12
+        
+        JDK 1.8 Standard Version
+                Link:https://www.oracle.com/java/technologies/downloads/#java8-window
+===============================================================================================================================================
+1)Access Specifier
+
+   *Public: Global Level Access. (inside and outside the package)
+           Example: public class student(){}
+
+   *Private: Class Level Access. (Inside the class only)
+           Example: private class student() {}
+
+   *Protected: Same like public but to be used with “Extends” keyword
+           Example: protected class student() {}
+
+   *Default: Package Level Access. (only inside the package)
+
+2)Garbage Collections
+	
+        *Unreferenced objects are deleted automatically
+	*Unwanted/ unused memory are deleted automatically
+	*It is possible only in JAVA not in C, C++ etc
+
+3)Data Types & Types
+ 
+    Data types specify the different sizes and values that can be stored in the variable.
+    Need to Declare it 
+    1Byte---> 8 bit
+        
+ Data type has two types namely,
+
+  Primitive: (Store directly)
+int a=10
+      *Predefined
+      *Can store only one value
+      *There are no additional methods
+      *Example Primitive Data Type:byte,short,int,long,float,double,boolean and char.('\u0000')
+
+  Non-primitive: (Store based on reference)
+int a = {12,2,3,4}
+      *Not-Predefined
+      *Can store more than one value
+      *It references a memory location which stores the Data. (Reference variables)
+      *Example Non-Primitive Data Type:Strings,Arrays,Classes,Interface etc.
+
+String---> Group of characters("__")eg (" Eswar67i@gmail.com ")
+Array---> Collection of elements eg: string []s = {"ishu", "45", "A"} int a[] = {23,34,56,78}
+Class---> Class consists of variables and methods and object
+
+*********************************************************************************************************************************
+
+Wraper Class: Convert data type into class object used in collection
+[int --> integer & char --> character] a={"ishhu",12,'A',23.3F}
+**********************************************************************************************************************************
+
+5)Sample Program
+
+  Class: 
+     Collection of methods and objects
+  
+  Methods: 
+     
+       Set of actions to be performed
+  
+  Object: 	
+     Instance of class
+     new keyword- it allocates new memory
+     it helps to call the method
+
+Syntax: ClassName Obj.name/ref.name = new ClassName();		
+
+Example:
+
+Private void name_Company{    //signature part
+System.out.println("greens")  //implementation part
+}
+public static void main(string[]args){
+company c = new company(); //object
+c.name_Company(); //method calling
+}
+================================================================================================================================================================
+  OOPS:Object Oriented Programming Structure
+     The structure of implementation in which our programs are organized in the form of Class, Methods and Objects
+
+  Oops Concepts:
+	*Encapsulation
+	*Inheritance
+	*Polymorphism
+	*Abstraction
+
+Encapsulation:
+      Binding code and data together as a single entity (Information).
+
+eg: WebDriver driver = new ChromeDriver(); 
+    pojo class (getters)
+
+Inheritance:
+      Accessing one class property into another class using “extends” keyword.
+
+Types:
+
+      Single Inheritance (1P,1C)
+                Accessing one parent class property into one child class.
+
+      Multiple Inheritance (2P,1C)
+               It is impossible in Java
+               It can be overcome by Interface
+               More than two parent class properties accessed by one child class.
+
+      Multilevel Inheritance(1P,2C) 
+               One class property is accessed by one child class which is being accessed by 
+               another child class.
+
+      Hierarchical Inheritance(1P,2Cor more C) 
+               One parent class property accessed by two (or) more child classes.
+
+      Hybrid
+               Combination of single and multiple Inheritances.
+
+Polymorphism:
+           One task can be completed in many ways
+
+Types: 
+
+      Method Overloading / Static Binding / Compile-time Polymorphism
+      Method Overriding / Dynamic Binding / Run-time Polymorphism
+
+Method Overloading 
+              In the same class method names will be same, 
+              Parameters will be different based on
+                    --> Data Type will differ
+                    --> Data count will differ
+                    --> Data order will differ
+
+Int, Float(F), Double(D), Char(''), String, Long(L)
+
+Method Overriding
+             Class names are different,           
+             Method names and parameters will be same
+
+
+Abstraction:
+
+     Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+
+Types:
+     *Abstract class (or) Partial Abstraction
+     *Interface (or) fully Abstraction
+
+Abstract class (or) Partial Abstraction:
+	                    Supports Abstract and Non-Abstract method(normal method)
+	                    We cannot create an object for Abstract Class because there is no implementation part.
+	                    By using “extends” keywords we can access Abstract Class.
+	                    public abstract Keyword is Mandatory.
+	                    No implementation Part only Signature part.
+Example of abstract class
+1.	public abstract class Classname{
+}  
+
+Example of abstract method
+1.	public abstract void methodnName();//no method body in abstract 
+2.	public void methodnName(){}
+
+Interface (or) fully Abstraction:
+		An interface in Java is a blueprint of a class.
+
+ 	It supports only Abstract Method
+	We cannot create an object for interface because there is no implementation part
+	By using “implements” keyword we can access Interface
+	Public abstract keyword is default here.
+	By interface, we can support the functionality of multiple inheritance.
+
+Example of Interface class
+1.	Public interface  Classname{
+}  
+
+Example of abstract method
+3.	public abstract void methodnName();//no method body in abstract 
+OR
+4.	void methodnName();//no method body in abstract 
+=============================================================================================================================================================================================================
+Constructor:
+          When we create an object, the default constructor will be executed automatically.
+ Types:
+      *Default/Non-parameterized
+      *Parameterized
+
+           In Constructor the class name and the method name will be same
+           They are differentiate with the different arguments and parameter
+           Doesnt need to call the method by reference name
+           Constructor support method overloading
+           The object reference name will create the memory wastage known as garbage this can be clear with the help of using "finalize" keyword
+==============================================================================================================================================================================================================
+Type Casting:
+
+There are four types of casting are
+                       *Widening
+                       *Narrowing
+                       *Upcasting
+                       *Downcasting                                    
+
+Widening:
+        Small to Big (lowewr data to higher data type)
+        byte -> short -> char -> int -> long -> float -> double
+1byte-4 byte
+
+eg:
+  public static void main(String[] args)  
+  {  
+   int x = 7;  
+   //automatically converts the integer type into long type  
+   long y = x;  
+   //automatically converts the long type into float type  
+   float z = y;  
+   System.out.println("Before conversion, int value "+x);  
+   System.out.println("After conversion, long value "+y);  
+   System.out.println("After conversion, float value "+z);  
+}  
+}  
+
+Narrowing:
+       Big to Small
+       double -> float -> long -> int -> char -> short -> byte
+
+eg:
+  public static void main(String args[])  
+  {  
+  double d = 166.66;  
+  long l = (long)d;  //downcasting
+  int i = (int)l;  
+  System.out.println("Before conversion: "+d);  
+  System.out.println("After conversion into long type: "+l);  
+  System.out.println("After conversion into int type: "+i);  
+}  
+}
+
+Upcasting: 
+         Access a child class object to a parent class.
+
+Syntax:	
+      Parent ClassName childclass_object=new ChildClassName();
+
+eg: WebDriver driver = new ChromeDriver();
+
+
+Downcasting: 
+         Access a parent class object to a child class. (Not possible in JAVA).
+
+Syntax:  
+      ChildClassName() parent_object=new Parent ClassName();
+eg:   TakeScreenshot ts = (Takescreenshot)driver;
+
+************************************************************************************************************************************************************************************************************************
+Scanner:
+	It is a Class
+	Scanner class present in java.util.Scanner package
+	To get the input from the user in Run time.(ATM)
+Syntax:
+	Scanner refName= new Scanner(System.in);
+
+Where 
+	Scanner---> Class
+	System.in---> To take input from console
+	System.out---> To print the console
+
+Scanner Methods:
+       *nextline();---->Accepts more than one value
+                 	After space it will accept
+  
+       *next();---->Accept only one value. (abc123@gamil.com)
+                     After space it wont accept.
+ 
+        *nextlong();
+        *nextint();---->It accept a integer values like whole numbers.
+        *nextfloat(); --->It accept a decimal values
+        *nextdouble(); --->It accept a decimal values
+
+Abstract Class vs Interface
+Overload Vs Override
+Constructor
+public vs protected
+Main Method Syntax
+======================================================================================================================================================================================================================================  
+String: 
+      Sequence of characters or words or special characters must enclose with in the double quotes.
+It is a Index Based()
+It is a non-Primitive datatype.
+
+String Functions/ Manipulation:
+             	
+String s= " Welcome ";
+
+*s.length()	
+*s.equals()	
+*s.equalIgnoreCase()	
+*s.Startwith()	
+*s.endswith()	
+*s.IndexOf()	
+*s.lastIndexOf()	
+*s.toUpperCase()	
+*s.toLowerCase()	
+*s.charAT()	
+*s.substring()
+*s.contains()	
+*s.replace()	 
+*s.isEmpty()
+*s.split()
+*s.trim()
+*s.null
+
+Length---> Count of the character with spaces
+Equals---> exact equal
+Equal Ignore Case---> it will not consider either Lower/Upper case
+Uppercase---> all character in upper case
+Lowercase---> all character in lower case
+startsWith---> start word/ character with in same like input[either lower/upper case]
+endsWith---> start word/ character with in same like input[either lower/upper case]
+contains()---> given character is available/not in expected input/output
+indexOf---> First index of give character
+lastIndexOf---> Last index of give character
+char---> character will print based on given integer
+replace---> replace the given character
+substring---> returns a new string that is a substring of this string
+isEmpty()---> checks whether a String is empty or not
+split()---> method breaks a given string around matches of the given regular expression
+===========================================================================================================================================================================================================
+Static Keyword:
+ Static is keyword using in the programming. this can be used in many ways in the program
+
+     *Static Block
+     *Static Method
+     *Static Variable
+
+                Static can be defined to be inside the class and outside the method
+                We cannot overridethe static keyword 
+
+eg: Static {  //(no need to call by object)
+      System.out.println("First Priority");
+    }
+    
+    Private Static Void online(){  //(no need to call by object)
+     System.out.println("Static Method");
+    }
+    
+   Static int a = 10; //(need to call by object)
+   Private Void online(){
+     System.out.println("Static Variable");
+    }
+==================================================================================================================================================================================
+Operator :
+
+Relational operator:
+
+== (equal) ex- 5==5--True
+!= (not equal) 6!=5--false
+> (greater than) 
+< (lesser than)
+>= (greater than equal)
+<= (lesser than equal)
+
+Increment/decrement operator:
+
+i++(i+1)/(1+i)++i-->Increment
+i--(i-1)/(1-i)--i--->Decrement
+
+logical operator:
+
+&&---> And operator (5==5 && 6!=5)
+||----> or operator (5==6 || 6!=5)
+!--->not operator 
+==============================================================================================================================================================================
+Variable:
+       Variable is a piece of memory that can contain a data value. 
+       Variables has three types namely,
+
+Variable Declaration:
+
+DataType variableName = VariableValue;
+
+eg:int a = 10;
+
+inta;
+
+Local Variable:
+            The variable which is assigned a value inside the method.
+            Local variable should be initialized by a value.
+            It is value is only inside the method.
+
+Class/Instance Variable:
+            The variable which is assigned by a value outside the method, inside the class.
+            Class variable need not be initialized by a value, if not initialized the default value “0” will be executed.
+            It can be used anywhere inside the program.
+
+Static Variable:
+            We can call this static variable without using an object.
+            It can be only given for the class variable.
+            When a class variable is assigned as public static, the variable can be used inside and outside the package. (class.objectvariable)
+==================================================================================================================================================================================
+Array:
+	Storing Multiple value in single variable.
+	Non-Primitive datatype
+Features:
+	Its supports similar datatype [homogeneous elements]
+	Index based
+	int a[]={1,2,3,4,5} 
+        Length=5  Index=5-1=4
+	Index starts from 0 to n-1 ---> where n=length
+ 
+Instantiation of an Array in Java:
+        
+        Datatype arrayRefVar[]=new datatype[size];  
+
+eg:int a[]=new  int[500];
+   50-use
+   450—memory wastage
+
+Types of Array in java:
+
+There are two types of arrays.
+	
+        *Single Dimensional Array ----> int a[]=new int[3]; 
+	*Multidimensional Array -----> int b[][] = {{1,2,3},{2,3},{3}}; 
+ 
+
+Disadvantages:
+	it will support similar datatype
+	it has fixed length
+	it is high memory wastage
+
+But it can be overcome by collection.  
+
+Note: If we not initialize the value the default value "0" of the datatype will be printed.
+====================================================================================================================================================================
+Control Statements: 
+         	Control the execution flow of the program
+
+                *Iterative Statements
+                *Selection Statements
+                *Jump Statements
+
+
+Iterative Statements:
+   	While
+	Do-while
+	For 
+	For-each
+
+*While:
+    Entry loop level condition checking.
+
+syntax: while (condition){    
+      //code to be executed   
+    increment / decrement statement  
+
+    }   
+
+*Do - While:
+     Exit level condition checking 
+
+syntax: do{    
+         //code to be executed / loop body  
+        }while (condition); 
+
+*For Loop:
+       Execute based on the iteration
+       For loop and Nested For Loop.	
+
+syntax: for(initialization; condition; increment/decrement){    
+          //statement or code to be executed    
+        }   
+
+*Nested For Loop:
+           Contains inner and outer Loop          
+
+syntax: for(initialization; condition; increment/decrement){    
+           //statement or code to be executed    
+        for(initialization; condition; increment/decrement){    
+           //statement or code to be executed    
+          }   
+        }   
+
+
+*For Each or Enhanced For Loop:
+                         print each element of the numbers array one by one [i-->eachitem array---->target]
+  
+   string array[] = {10,22,31,34,15};
+
+syntax: for(datatype i:array){    
+          //statement or code to be executed    
+        }   
+***************************************************************************************************************************************************************************
+Selection Statements:
+
+*IF Statement:
+       	It will go inside the block only if the condition is true otherwise, it will not execute the block.
+
+syntax: if(condition) {    
+          statement 1; [true]
+        }    
+
+*If-Else Statement:
+        If the condition is true then, it will execute the If block. Otherwise, it will execute the Else block.
+
+syntax: if(condition) {    
+         statement 1; [true]   
+        }  
+        else{  
+         statement 2; [false]   
+        } 
+
+*Nested if-statement
+	It Contain an if or if-else statement inside another if or else-if statement.
+
+syntax: if(condition 1) {    
+           statement 1; [ condition 1 is true]
+             if(condition 2) {  
+                  statement 2; [ condition 2 is true] 
+              }  
+               else{  
+                  statement 2; [condition 2 is false]   
+              }
+       }
+       else{
+          statement 1; [ condition 1 is false]
+       }
+
+*If-else-if
+	 if-statement followed by multiple else-if statements
+
+syntax: if(condition 1) {    
+          statement 1; [condition 1 is true]   
+        }  
+        else if(condition 2) {  
+          statement 2; [ condition 2 is true]   
+        }  
+        else if(condition 3) {  
+          statement 3; [ condition 2 is true]   
+        }  
+       else {  
+          statement 2; [all conditions are false]  
+       }
+************************************************************************************************************************************************************************  
+Switch Statement:
+	     Select one of many code blocks to be executed
+initialize
+        eg: int month= 4;
+
+switch(expression){
+case 1: 
+	condition;
+	break;
+case 2: 
+	condition;
+	break;
+default:
+        condition;
+        break;
+}
+*********************************************************************************************************************************************************************************
+Jump Statement:
+
+*Break; -----> It will exit from the loop
+*Continue; -----> It will skip the particular iteration
+*Return; -----> It will return the value given
+=======================================================================================================================================================================================
+Keyword:
+
+*this-->Current class reference
+*super--->Parent class reference
+*throw---->Handle single exception
+*throws--->Handle more than one exception
+*try & catch--->Exception handling
+*assert---->Exception handling
+*final-->class, method, variable (cant access)
+*finally--->Block execute whether an exception is handled or not
+*finalize--->Removes Garbage value
+*import---> To implement the class / method need to import the package
+*extends and implements(only interface)---> Access method of one class to another class
+*static--->No need to create the object
+===============================================================================================================================================================================
+
+*****
+****
+***
+**
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Abstract Class vs Interface
+
+Overload Vs Override
+
+Static Keyword (Why static cant override)
+
+Constructor
+
+Multiple Inheritance Possible ?
+
+constant variable ( final ) 
+
+Throw vs Throws
+
+this vs super
+
+public vs protected
+
+== vs .equals
+
+Main Method Syntax
+
+Final/Finally/Finalize
+
+Autoboxing/unboxing
+
+Data Types and Default Values
+
+OOPS Concept
+
+
+verification and validation
+
+Assert and verify
+
+soft assert and hard assert
